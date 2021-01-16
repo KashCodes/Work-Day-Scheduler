@@ -7,6 +7,18 @@ Click the timeblock you want to edit and click save when finished. Timeblocks wi
 
 ---
 
+### Created Using:
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- jQuery
+- Moment.js
+- Font Awesome Icon's
+- Google Font CSS
+
+---
+
 ### Github Repository
 
 > https://github.com/KashCodes/Work-Day-Scheduler
