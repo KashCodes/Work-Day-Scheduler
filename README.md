@@ -1,7 +1,6 @@
 # Work Day Scheduler 
----
 
-## Instructions:
+### Instructions:
 
 Click the timeblock you want to edit and click save when finished. Timeblocks will show a different color for past, present, and future timeblocks. All saved schedule changes will remain when the page is refreshed. 
 
