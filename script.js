@@ -22,5 +22,31 @@ $(document).ready(function () {
   $("#hour-4p .description").val(localStorage.getItem("hour-4p"));
   $("#hour-5p .description").val(localStorage.getItem("hour-5p"));
 
+  // Tracks the current hour if past, present, future.
+  function hourTracker() {
+    //displays current hour in Moment.js format
+    var currentHour = moment().hour();
 
+    $(".time-block").each(function () {
+      var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+      console.log(blockHour, currentHour);
+
+      // if loop for all timeblocks to ensure block is showing the correct coloring
+      if (blockHour < currentHour) {
+        $(this).addClass("past");
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+      } else if (blockHour === currentHour) {
+        $(this).removeClass("past");
+        $(this).addClass("present");
+        $(this).removeClass("future");
+      } else {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+        $(this).addClass("future");
+      }
+    });
+  }
+
+  hourTracker();
 });
