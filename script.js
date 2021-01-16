@@ -12,15 +12,15 @@ $(document).ready(function () {
   });
 
   // Pulling all time blocks from local storage
-  $("#hour-9 .description").val(localStorage.getItem("hour-9"));
-  $("#hour-10 .description").val(localStorage.getItem("hour-10"));
-  $("#hour-11 .description").val(localStorage.getItem("hour-11"));
-  $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-  $("#hour-1p .description").val(localStorage.getItem("hour-1p"));
-  $("#hour-2p .description").val(localStorage.getItem("hour-2p"));
-  $("#hour-3p .description").val(localStorage.getItem("hour-3p"));
-  $("#hour-4p .description").val(localStorage.getItem("hour-4p"));
-  $("#hour-5p .description").val(localStorage.getItem("hour-5p"));
+  $("#hour9 .description").val(localStorage.getItem("hour9"));
+  $("#hour10 .description").val(localStorage.getItem("hour10"));
+  $("#hour11 .description").val(localStorage.getItem("hour11"));
+  $("#hour12 .description").val(localStorage.getItem("hour12"));
+  $("#hour13 .description").val(localStorage.getItem("hour13"));
+  $("#hour14 .description").val(localStorage.getItem("hour14"));
+  $("#hour15 .description").val(localStorage.getItem("hour15"));
+  $("#hour16 .description").val(localStorage.getItem("hour16"));
+  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
   // Tracks the current hour if past, present, future.
   function hourTracker() {
